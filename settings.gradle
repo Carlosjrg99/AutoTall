@@ -1,0 +1,2 @@
+rootProject.name='Auto Tall'
+include ':app'

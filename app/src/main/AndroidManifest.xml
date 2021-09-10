@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.autotall">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ListarBarriles"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".OpcionesLlenado"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".MenuAdministrador" ></activity>
+        <activity android:name=".OpcionesLlenadoUsuario"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".MenuUsuario" ></activity>
+        <activity
+            android:name=".LlenadoBarril"
+            android:theme="@style/AppTheme.NoActionBar" ></activity>
+        <activity
+            android:name=".CrearUsuario"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".MenuAdministrador" ></activity>
+        <activity
+            android:name=".EliminarUsuario"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".MenuAdministrador" ></activity>
+        <activity
+            android:name=".EditarUsuario"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".MenuAdministrador" ></activity>
+        <activity
+            android:name=".EnConstruccion"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuAdministrador"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuUsuario"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/notitle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
